@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.pipeworx-io/segment",
+  "title": "Segment",
+  "description": "Segment MCP Pack — wraps the Segment Public API (https://api.segmentapis.com).",
+  "version": "0.1.0",
+  "websiteUrl": "https://pipeworx.io/packs/segment",
+  "repository": {
+    "url": "https://github.com/pipeworx-io/mcp-segment",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://gateway.pipeworx.io/segment/mcp"
+    }
+  ]
+}
