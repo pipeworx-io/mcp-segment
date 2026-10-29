@@ -1,0 +1,111 @@
+[
+  {
+    "name": "segment_list_sources",
+    "description": "Return bounded Segment sources with IDs, names, slugs, enabled state, metadata, labels, and settings. Answers which applications and systems send customer events into the workspace.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "_apiKey": {
+          "type": "string",
+          "description": "Segment workspace Public API token"
+        },
+        "limit": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 100,
+          "description": "Maximum records, default 25 and maximum 100"
+        },
+        "cursor": {
+          "type": "string",
+          "description": "Pagination cursor from the previous response"
+        }
+      },
+      "required": [
+        "_apiKey"
+      ]
+    }
+  },
+  {
+    "name": "segment_source_destinations",
+    "description": "Return bounded destinations connected to one Segment source with connection IDs, destination definitions, settings, and enabled state. Answers where a source sends its customer data.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "_apiKey": {
+          "type": "string",
+          "description": "Segment workspace Public API token"
+        },
+        "source_id": {
+          "type": "string",
+          "description": "Segment source ID"
+        },
+        "limit": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 100,
+          "description": "Maximum records, default 25 and maximum 100"
+        },
+        "cursor": {
+          "type": "string",
+          "description": "Pagination cursor from the previous response"
+        }
+      },
+      "required": [
+        "_apiKey",
+        "source_id"
+      ]
+    }
+  },
+  {
+    "name": "segment_list_destinations",
+    "description": "Return bounded Segment destination connections with source relationships, actions, triggers, settings, and enabled state. Answers which downstream tools receive customer data and how they are connected.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "_apiKey": {
+          "type": "string",
+          "description": "Segment workspace Public API token"
+        },
+        "limit": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 100,
+          "description": "Maximum records, default 25 and maximum 100"
+        },
+        "cursor": {
+          "type": "string",
+          "description": "Pagination cursor from the previous response"
+        }
+      },
+      "required": [
+        "_apiKey"
+      ]
+    }
+  },
+  {
+    "name": "segment_list_warehouses",
+    "description": "Return bounded Segment warehouse connections with IDs, metadata, settings, and sync configuration. Answers which analytical warehouses receive unified customer data.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "_apiKey": {
+          "type": "string",
+          "description": "Segment workspace Public API token"
+        },
+        "limit": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 100,
+          "description": "Maximum records, default 25 and maximum 100"
+        },
+        "cursor": {
+          "type": "string",
+          "description": "Pagination cursor from the previous response"
+        }
+      },
+      "required": [
+        "_apiKey"
+      ]
+    }
+  }
+]
