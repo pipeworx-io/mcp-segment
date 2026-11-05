@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-segment",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Segment MCP Pack — wraps the Segment Public API (https://api.segmentapis.com).",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "segment",
     "gatewaySlug": "segment",
-    "sourceHash": "v1-fd084508917c569c62e29a9aef7db4708a520c9fa3cff33d2b7a5e9297279cb6",
-    "sourceCommit": "f47d581679e1e887373df51ba623f891fbe4c464"
+    "sourceHash": "v1-01fbf675c5ae31c6694317ce97af3bec071627ab263a7f348f9f6127aa6b85aa",
+    "sourceCommit": "8fc802aa5e23be625ce08d97178f5676c7bc93f3"
   }
 }
