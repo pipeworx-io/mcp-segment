@@ -1,9 +1,9 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.pipeworx-io/segment",
-  "title": "Segment",
-  "description": "Segment MCP Pack — wraps the Segment Public API (https://api.segmentapis.com).",
-  "version": "0.2.1",
+  "title": "Segment (Unofficial)",
+  "description": "Unofficial Segment MCP Pack — wraps the Segment Public API (https://api.segmentapis.com).",
+  "version": "0.2.2",
   "websiteUrl": "https://pipeworx.io/packs/segment",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-segment",
